@@ -1,0 +1,249 @@
+body {
+  margin: 0;
+  /* border: 1px solid; */
+  font-size: 20px;
+  font-family: monospace;
+  background-color: #f0f0f0;
+}
+
+* {
+  margin: 0;
+}
+
+.body-overlay {
+  width: 100vw;
+  height: 100vh;
+  box-sizing: border-box;
+  /* border: 1px solid red; */
+  position: absolute;
+  z-index: 5;
+  background-color: rgba(0, 0, 0, 0.5);
+  /* transform: translateX(-100vw); */
+  visibility: hidden;
+  transition: background-color 350ms ease-in-out;
+}
+
+.navbar {
+  /* border: 1px solid; */
+  width: 100vw;
+  height: 60px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  padding-right: 30px;
+  padding-left: 30px;
+  position: relative;
+  box-sizing: border-box;
+  gap: 20px;
+  background-color: white;
+}
+
+.nav-bar-menu {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  /* border: 1px solid; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  transform: scale(0.9);
+  transition: background-color 200ms ease-in;
+}
+
+.nav-bar-menu:hover {
+  background-color: #e3e1e1;
+}
+
+.nav-bar-title {
+  margin-right: auto;
+  transform: scale(0.7);
+  /* border: 1px solid; */
+  position: relative;
+  left: -30px;
+  cursor: pointer;
+  user-select: none;
+}
+
+.nav-bar-log-in {
+  /* border: 1px solid; */
+  font-size: 15px;
+  cursor: pointer;
+  user-select: none;
+}
+
+.nav-bar-sign-up {
+  /* border: 1px solid; */
+  font-size: 15px;
+  border-radius: 20px;
+  padding: 10px;
+  color: white;
+  background-color: black;
+  cursor: pointer;
+  /* transition: background-color 200ms ease-in; */
+  user-select: none;
+}
+.nav-bar-sign-up:hover {
+  background-color: #292929;
+}
+
+.hamburger-menu-container {
+  background-color: white;
+  /* border: 1px solid; */
+  width: 300px;
+  height: 100vh;
+  position: absolute;
+  top: 0;
+  box-sizing: border-box;
+  padding: 20px;
+  opacity: 0;
+  user-select: none;
+  transform: translateX(-300px);
+  transition: all 350ms ease-in;
+  z-index: 10;
+}
+
+.account-container {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  /* border: 1px solid; */
+  position: absolute;
+  width: 260px;
+}
+
+.btn {
+  width: 100%;
+  height: 50px;
+  /* border: 1px solid; */
+  box-sizing: border-box;
+  border-radius: 10px;
+  padding: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 19px;
+  cursor: pointer;
+}
+
+.sign-up-btn {
+  background-color: black;
+  color: white;
+}
+
+.sign-up-btn:hover {
+  background-color: #2b2b2b;
+  color: white;
+}
+
+.log-in-btn {
+  background-color: #f2f2f2;
+}
+
+.log-in-btn:hover {
+  background-color: #dedede;
+}
+
+.tools-container {
+  /* border: 1px solid; */
+  font-size: 14px;
+  font-weight: bold;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: left;
+  gap: 10px;
+  position: absolute;
+  top: 180px;
+  width: 260px;
+}
+
+.tools-item {
+  cursor: pointer;
+}
+
+.app-download-container {
+  /* border: 1px solid; */
+  width: 260px;
+  height: 80px;
+  box-sizing: border-box;
+  position: absolute;
+  bottom: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+.app-download-links-container {
+  /* border: 1px solid; */
+  width: 230px;
+  height: 40px;
+  box-sizing: border-box;
+  position: absolute;
+  bottom: 40px;
+  display: flex;
+  gap: 10px;
+  justify-content: left;
+  align-items: center;
+}
+
+.app-image {
+  transform: scale(1.1);
+  /* border: 1px solid; */
+  width: 50px;
+}
+
+.app-text {
+  box-sizing: border-box;
+  width: 190px;
+  font-size: 15px;
+  font-weight: bold;
+  /* border: 1px solid; */
+}
+
+.iphone-img {
+  transform: scale(0.35);
+}
+
+.android-img {
+  transform: scale(0.35);
+  /* border: 1px solid; */
+}
+
+.iphone-download,
+.android-download {
+  display: flex;
+  align-items: center;
+  justify-items: center;
+  font-size: 13px;
+  font-weight: bold;
+  text-decoration: none;
+  height: 40px;
+  width: 100px;
+}
+
+.download:link {
+  color: black;
+}
+
+.download:visited {
+  color: black;
+}
+
+.download:hover {
+  background-color: #c9c9c9;
+}
+
+.download {
+  width: 100px;
+  /* border: 1px solid; */
+  border-radius: 20px;
+  background-color: #f2f2f2;
+  padding: 20px;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
